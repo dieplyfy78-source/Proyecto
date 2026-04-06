@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Barber Studio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor header-contenido">
+            <div class="logo-contenedor">
+                <img src="img/logo.png" alt="Logo de Barber Studio" class="logo">
+                <h1>Barber Studio</h1>
+            </div>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pagina-simple">
+        <div class="contenedor login-contenedor">
+            <div class="login-card">
+                <h2>Login</h2>
+                <p class="texto-seccion">
+                    Ingresá tus credenciales para acceder al panel de usuario.
+                </p>
+                <!--Importante-->
+                <form class="formulario-contacto" id="formulario-contacto">
+                    <input type="text" placeholder="Nombre de usuario" id="nameTxt" required>
+                    <input type="password" placeholder="Contraseña" id="passTxt" required>
+                    <button type="submit" class="btn" id="loginBtn" onclick="configurarLogin();">Ingresar</button>
+                </form>
+
+                <p class="nota-login" id="nota-login">
+                </p>
+            </div>
+        </div>
+    </section>
+    <script src="./data/data.js"></script>
+    <script src="./js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Usuario - Barber Studio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor header-contenido">
+            <div class="logo-contenedor">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <h1>Barber Studio</h1>
+            </div>
+
+            <nav>
+                <a href="panel-usuario.html">Volver al panel</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pagina-simple">
+        <div class="contenedor login-contenedor">
+            <div class="login-card">
+                <h2>Agregar Usuario</h2>
+
+                <form class="formulario-contacto">
+                    <input type="text" placeholder="Nombre completo" required id="nameC">
+                    <input type="email" placeholder="Correo electrónico" required id="correoC">
+                    <input type="text" placeholder="Nombre de usuario" required id="userC">
+                    <input type="password" placeholder="Contraseña" required id="contraC">
+
+                    <select class="input-select" id="rolC">
+                        <option>Seleccionar rol</option>
+                        <option>Administrador</option>
+                        <option>Barbero</option>
+                        <option>Recepción</option>
+                    </select>
+
+                    <button type="submit" class="btn" onclick="NewUser()">Guardar usuario</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./data/data.js"></script>
+<script src="./js/agregarUsuario.js"></script>
+</body>
+</html>

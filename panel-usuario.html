@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Usuario - Barber Studio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor header-contenido">
+            <div class="logo-contenedor">
+                <img src="img/logo.png" alt="Logo de Barber Studio" class="logo">
+                <h1>Barber Studio</h1>
+            </div>
+            <!--Navbar-->
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="login.html" onclick="SingOut()">Cerrar sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="pagina-simple">
+        <div class="contenedor">
+            <h2>Panel de Usuario</h2>
+            <p class="texto-seccion">Opciones disponibles del sistema.</p>
+
+            <div class="panel-opciones">
+                <a href="login.html" class="panel-card" onclick="SingOut()">
+                    <h3>Salir / Cerrar sesión</h3>
+                    <p>Volver a la página de inicio de sesión.</p>
+                </a>
+
+                <a href="info-usuario.html" class="panel-card">
+                    <h3>Información de usuario</h3>
+                    <p>Visualizar la información genérica de un usuario.</p>
+                </a>
+
+                <a href="agregar-usuario.html" class="panel-card" onclick="VerificarRol()" id="botonCrear">
+                    <h3>Agregar usuario</h3>
+                    <p>Registrar un nuevo usuario dentro del sistema.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="./data/data.js"></script>
+    <script src="./js/roles.js"></script>
+</body>
+</html>
